@@ -1,12 +1,8 @@
-<p align="center">
+<p align="left">
   <img src="assets/ninja-logo.png" width="120"/>
 </p>
 
-<h1 align="center">XLSX to CSV Converter</h1>
-
-<p align="center">
-  Transformando dados em decisões — sem perder o propósito.
-</p>
+<h1 align="left">XLSX to CSV Converter</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11-blue" />
