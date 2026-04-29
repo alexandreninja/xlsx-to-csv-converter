@@ -69,7 +69,7 @@ python xlsx_to_csv.py
 ## Autor
 
 <p align="left">
-  <img src="assets/ninja-logo.png" width="70" align="left" style="margin-right: 15px;"/>
+  <img src="assets/ninja-logo.png" width="150" align="left" style="margin-right: 15px;"/>
 
   <strong>Alexandre NINJA</strong><br/>
   Marketing Analytics → Ciência de Dados<br/>
