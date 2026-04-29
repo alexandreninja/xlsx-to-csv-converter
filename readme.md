@@ -58,8 +58,11 @@ python xlsx_to_csv.py
 ```
 ## Autor
 
-Alexandre Carvalho Ribeiro Costa
+<p align="left">
+  <img src="assets/ninja-logo.png" width="80" align="left" style="margin-right: 15px;"/>
 
-<p align="center">
-  <img src="assets/ninja-logo.png" width="300" draggable="false"/>
+  <strong>Alexandre NINJA</strong><br/>
+  Marketing Analytics → Ciência de Dados
 </p>
+
+<br clear="left"/>
