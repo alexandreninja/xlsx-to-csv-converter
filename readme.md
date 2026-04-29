@@ -35,20 +35,24 @@ python xlsx_to_csv.py
 ```
 
 ## Versão
+
 1.0.0
 
 ## Próximas melhorias
-Permitir escolher a pasta de entrada e saída via terminal
-Criar interface com Streamlit
-Tratar erros de arquivos corrompidos
-Adicionar testes automatizados
+
+- Permitir escolher a pasta de entrada e saída via terminal
+- Criar interface com Streamlit
+- Tratar erros de arquivos corrompidos
+- Adicionar testes automatizados
 
 ## Estrutura do projeto
+
+```bash
 .
-├── xlsx/        # Arquivos de entrada
-├── csv/         # Arquivos convertidos
+├── xlsx/                 # Arquivos de entrada
+├── csv/                  # Arquivos convertidos
 ├── xlsx_to_csv.py
 ├── requirements.txt
 ├── Dockerfile
 └── docker-compose.yml
-...
+```
