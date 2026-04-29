@@ -1,4 +1,19 @@
-# XLSX to CSV Converter
+<p align="center">
+  <img src="assets/ninja-logo.png" width="120"/>
+</p>
+
+<h1 align="center">XLSX to CSV Converter</h1>
+
+<p align="center">
+  Transformando dados em decisões — sem perder o propósito.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue" />
+  <img src="https://img.shields.io/badge/Pandas-data%20analysis-blue" />
+  <img src="https://img.shields.io/badge/Docker-ready-blue" />
+  <img src="https://img.shields.io/badge/Status-active-success" />
+</p>
 
 Projeto simples em Python para converter arquivos `.xlsx` em `.csv`, usando Pandas e Docker.
 
@@ -49,6 +64,7 @@ python xlsx_to_csv.py
 
 ```bash
 .
+├── assets/               # Imagens e arquivos visuais do projeto
 ├── xlsx/                 # Arquivos de entrada
 ├── csv/                  # Arquivos convertidos
 ├── xlsx_to_csv.py
@@ -56,13 +72,15 @@ python xlsx_to_csv.py
 ├── Dockerfile
 └── docker-compose.yml
 ```
+
 ## Autor
 
 <p align="left">
-  <img src="assets/ninja-logo.png" width="80" align="left" style="margin-right: 15px;"/>
+  <img src="assets/ninja-logo.png" width="70" align="left" style="margin-right: 15px;"/>
 
   <strong>Alexandre NINJA</strong><br/>
-  Marketing Analytics → Ciência de Dados
+  Marketing Analytics → Ciência de Dados<br/>
+  <em>Transformando dados em decisões — sem perder o propósito.</em>
 </p>
 
 <br clear="left"/>
