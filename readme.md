@@ -70,10 +70,10 @@ python xlsx_to_csv.py
 
 <table>
   <tr>
-    <td>
+    <td style="border: none; padding: 0;">
       <img src="assets/ninja-logo.png" width="120"/>
     </td>
-    <td>
+    <td style="border: none; padding-left: 12px; vertical-align: middle;">
       <strong>Alexandre NINJA</strong><br/>
       Marketing Analytics → Ciência de Dados<br/>
       <em>Transformando dados em decisões — sem perder o propósito.</em>
