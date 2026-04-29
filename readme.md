@@ -25,11 +25,14 @@ Este projeto foi criado como parte da minha transição de Marketing Analytics p
 
 ```bash
 docker compose run --rm converter
+```
 
 ## Como rodar sem Docker (via Terminal)
+
 ```bash
 pip install -r requirements.txt
 python xlsx_to_csv.py
+```
 
 ## Versão
 1.0.0
