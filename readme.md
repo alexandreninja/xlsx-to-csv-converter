@@ -51,3 +51,4 @@ Adicionar testes automatizados
 ├── requirements.txt
 ├── Dockerfile
 └── docker-compose.yml
+...
