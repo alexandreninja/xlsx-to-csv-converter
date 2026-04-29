@@ -1,10 +1,7 @@
-<p align="left">
-  <img src="assets/ninja-logo.png" width="120"/>
-</p>
 
 <h1 align="left">XLSX to CSV Converter</h1>
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/Python-3.11-blue" />
   <img src="https://img.shields.io/badge/Pandas-data%20analysis-blue" />
   <img src="https://img.shields.io/badge/Docker-ready-blue" />
