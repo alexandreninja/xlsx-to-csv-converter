@@ -56,3 +56,6 @@ python xlsx_to_csv.py
 ├── Dockerfile
 └── docker-compose.yml
 ```
+## Autor
+
+Alexandre Carvalho Ribeiro Costa
