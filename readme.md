@@ -59,3 +59,7 @@ python xlsx_to_csv.py
 ## Autor
 
 Alexandre Carvalho Ribeiro Costa
+
+<p align="center">
+  <img src="assets/ninja-logo.png" width="300" draggable="false"/>
+</p>
