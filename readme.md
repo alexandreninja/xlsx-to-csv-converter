@@ -68,12 +68,15 @@ python xlsx_to_csv.py
 
 ## Autor
 
-<p align="left">
-  <img src="assets/ninja-logo.png" width="150" align="left" style="margin-right: 15px;"/>
-
-  <strong>Alexandre NINJA</strong><br/>
-  Marketing Analytics → Ciência de Dados<br/>
-  <em>Transformando dados em decisões — sem perder o propósito.</em>
-</p>
-
-<br clear="left"/>
+<table>
+  <tr>
+    <td>
+      <img src="assets/ninja-logo.png" width="120"/>
+    </td>
+    <td>
+      <strong>Alexandre NINJA</strong><br/>
+      Marketing Analytics → Ciência de Dados<br/>
+      <em>Transformando dados em decisões — sem perder o propósito.</em>
+    </td>
+  </tr>
+</table>
