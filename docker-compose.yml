@@ -1,0 +1,8 @@
+name: csv-xlsx-app
+
+services:
+  converter:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
