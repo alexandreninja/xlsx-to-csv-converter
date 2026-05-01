@@ -1,3 +1,4 @@
 # Requirements
 pandas
 openpyxl
+streamlit
