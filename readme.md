@@ -120,9 +120,6 @@ python xlsx_to_csv.py
 </ul>
 
 ---
-
-## 👤 Autor
-
 <img src="assets/ninja-logo.png" width="120" align="left"/>
 
 **Alexandre NINJA**  
