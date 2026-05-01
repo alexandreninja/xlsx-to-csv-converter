@@ -1,5 +1,43 @@
+# =========================
+# 🐍 Python
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# =========================
+# 🧪 Ambiente virtual
+# =========================
+venv/
+
+# =========================
+# 🔐 Variáveis sensíveis
+# =========================
 .env
-csv/
-xlsx/*.xlsx
+
+# =========================
+# ⚙️ Configurações locais
+# =========================
+.streamlit/
+
+# =========================
+# 📂 Dados do projeto
+# (mantém as pastas, ignora os arquivos)
+# =========================
+csv/*
+!csv/.gitkeep
+
+xlsx/*
+!xlsx/.gitkeep
+
+# =========================
+# 🧠 VS Code
+# =========================
+.vscode/
+
+# =========================
+# 📦 Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db

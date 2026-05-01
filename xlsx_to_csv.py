@@ -1,42 +1,82 @@
+# ================================
+# IMPORTAÇÕES
+# ================================
 import pandas as pd
 import os
 import re
 
-def normalizer_nome(nome_arquivo):
-    # Converte nome para lowercase e remove caracteres especiais
+
+# ================================
+# FUNÇÃO: NORMALIZAR NOME
+# ================================
+def normalizar_nome(nome_arquivo):
     # Remove extensão
-    nome = nome_arquivo.replace('.xlsx', '')
-    # Converte para lowercase
+    nome = nome_arquivo.replace(".xlsx", "")
+
+    # Converte para minúsculo
     nome = nome.lower()
-    # Subistitui espacos e caracteres especiais para hífen
-    nome = re.sub(r'[^a-z0-9]', '-', nome)
+
+    # Substitui caracteres especiais por "-"
+    nome = re.sub(r"[^a-z0-9]", "-", nome)
+
     # Remove hífens duplicados
-    nome = re.sub(r'-+', '-', nome)
-    # Remove hífens no início e no fim
-    nome = nome.strip('-')
+    nome = re.sub(r"-+", "-", nome)
+
+    # Remove hífens do início e fim
+    nome = nome.strip("-")
+
     return nome
 
-def converter_xlsx_para_csv(pasta_xslx, pasta_csv):
+
+# ================================
+# FUNÇÃO: CONVERTER ARQUIVO (STREAMLIT)
+# ================================
+def converter_arquivo_upload(arquivo_upload):
+    # Lê o Excel enviado pelo usuário
+    df = pd.read_excel(arquivo_upload)
+
+    # Gera nome do CSV
+    nome_csv = arquivo_upload.name.replace(".xlsx", ".csv")
+
+    # Converte para CSV (em memória)
+    csv = df.to_csv(index=False).encode("utf-8")
+
+    # Retorna tudo para o Streamlit
+    return df, csv, nome_csv
+
+
+# ================================
+# FUNÇÃO: CONVERSÃO EM LOTE (PASTAS)
+# ================================
+def converter_xlsx_para_csv(pasta_xlsx, pasta_csv):
     # Cria pasta de saída se não existir
     os.makedirs(pasta_csv, exist_ok=True)
 
-    # Lista todos os arquivos xlsx na pasta
-    for arquivo in os.listdir(pasta_xslx):
-        if arquivo.endswith('.xlsx'):
-            caminho_xlsx = os.path.join(pasta_xslx, arquivo)
+    # Percorre arquivos
+    for arquivo in os.listdir(pasta_xlsx):
+        if arquivo.endswith(".xlsx"):
+            caminho_xlsx = os.path.join(pasta_xlsx, arquivo)
 
-            # Lê o arquivo Excel
+            # Lê Excel
             df = pd.read_excel(caminho_xlsx)
 
-            # Normaliza o nome do arquiv
-            nome_normalizado = normalizer_nome(arquivo)
-            caminho_csv = os.path.join(pasta_csv, f'{nome_normalizado}.csv' )
+            # Normaliza nome
+            nome_normalizado = normalizar_nome(arquivo)
 
-            # Salva como CSV
-            df.to_csv(caminho_csv, index=False, encoding='utf-8')
-            print(f'Convertido: {arquivo} -> {nome_normalizado}.csv')
+            # Caminho final
+            caminho_csv = os.path.join(pasta_csv, f"{nome_normalizado}.csv")
 
-# Executa a conversão
-pasta_xslx = 'xlsx'
-pasta_csv = 'csv'
-converter_xlsx_para_csv(pasta_xslx, pasta_csv)            
+            # Salva CSV
+            df.to_csv(caminho_csv, index=False, encoding="utf-8")
+
+            print(f"Convertido: {arquivo} -> {nome_normalizado}.csv")
+
+
+# ================================
+# EXECUÇÃO DIRETA (CLI)
+# ================================
+# Só roda quando executado diretamente (NÃO quando importado)
+if __name__ == "__main__":
+    pasta_xlsx = "xlsx"
+    pasta_csv = "csv"
+    converter_xlsx_para_csv(pasta_xlsx, pasta_csv)
