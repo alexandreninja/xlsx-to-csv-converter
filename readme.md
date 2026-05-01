@@ -168,9 +168,6 @@ Nenhuma informação é enviada para serviços externos.
 </ul>
 
 ---
-
-## 👤 Autor
-
 <img src="assets/ninja-logo.png" width="120" align="left"/>
 
 **Alexandre NINJA**  
