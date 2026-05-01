@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Status-active-success" />
 </p>
 
-Projeto simples em Python para converter arquivos `.xlsx` em `.csv`, agora com interface gráfica via Streamlit.
+Conversor de arquivos `.xlsx` para `.csv` com interface gráfica via Streamlit.
 
 ---
 
@@ -23,102 +23,69 @@ Projeto simples em Python para converter arquivos `.xlsx` em `.csv`, agora com i
 - Pré-visualização dos dados  
 - Download do arquivo convertido  
 - Histórico de conversões na sessão  
-- Reset inteligente da aplicação  
+- Execução via Docker simplificada  
 
 ---
 
-## 🎯 Objetivo
+## 🚀 Como rodar o projeto (RECOMENDADO)
 
-Este projeto foi criado como parte da minha transição de Marketing Analytics para Ciência de Dados, com foco em:
+### 🐳 Via Docker (mais simples)
 
-- automação de processos  
-- manipulação de dados  
-- execução local segura (LGPD)  
-- construção de aplicações reais  
+#### 1️⃣ Instale o Docker Desktop
 
----
+https://www.docker.com/products/docker-desktop/
 
-## ⚙️ O que o projeto faz
-
-- Lê arquivos `.xlsx`
-- Converte para `.csv`
-- Normaliza automaticamente os nomes dos arquivos
-- Permite uso via terminal ou interface gráfica
-- Processa dados localmente (sem envio externo)
-
----
-
-## 🧰 Tecnologias usadas
-
-- Python  
-- Pandas  
-- OpenPyXL  
-- Streamlit  
-- Docker  
-- Docker Compose  
-
----
-
-## 🖥️ Como rodar o projeto (PASSO A PASSO)
-
-### 1️⃣ Clonar o repositório
+#### 2️⃣ Clone o projeto
 
 ```bash
 git clone https://github.com/alexandreninja/xlsx-to-csv-converter.git
 cd xlsx-to-csv-converter
 ```
 
----
-
-### 2️⃣ Criar ambiente virtual (recomendado)
+#### 3️⃣ Rode o projeto
 
 ```bash
-python -m venv venv
+docker compose up --build
 ```
 
-#### Ativar o ambiente:
+#### 4️⃣ Acesse no navegador
 
-**Windows:**
-```bash
-venv\Scripts\activate
+```text
+http://localhost:8501
 ```
 
-**Mac/Linux:**
-```bash
-source venv/bin/activate
-```
+💡 Pronto! Você já pode usar o conversor sem instalar Python ou bibliotecas.
 
 ---
 
-### 3️⃣ Instalar dependências
+## 🖥️ O que você pode fazer na interface
+
+- 📤 Enviar arquivos `.xlsx`  
+- 👀 Visualizar os dados  
+- 📥 Baixar o `.csv` convertido  
+- 🕘 Acompanhar histórico da sessão  
+
+---
+
+## 🔒 Segurança
+
+Todos os dados são processados localmente.  
+Nenhuma informação é enviada para a internet.
+
+---
+
+## ⚙️ Outras formas de execução (opcional)
+
+### 🔹 Via Python
 
 ```bash
 pip install -r requirements.txt
-```
-
----
-
-## ▶️ Como usar
-
-### 🔹 Interface gráfica (RECOMENDADO)
-
-```bash
 streamlit run app.py
 ```
 
-Depois abra no navegador:
-
-http://localhost:8501
-
-👉 Você poderá:
-
-- enviar arquivo `.xlsx`
-- visualizar os dados
-- baixar o `.csv`
-
 ---
 
-### 🔹 Via script (modo tradicional)
+### 🔹 Script direto (modo antigo)
 
 ```bash
 python xlsx_to_csv.py
@@ -126,30 +93,15 @@ python xlsx_to_csv.py
 
 ---
 
-### 🔹 Via Docker
-
-```bash
-docker compose run --rm converter
-```
-
----
-
-## 🔒 Segurança
-
-Todos os dados são processados localmente.  
-Nenhuma informação é enviada para serviços externos.
-
----
-
 ## 📂 Estrutura do projeto
 
 ```bash
 .
-├── assets/               # Imagens e arquivos visuais do projeto
+├── assets/               # Imagens e arquivos visuais
 ├── xlsx/                 # Arquivos de entrada
 ├── csv/                  # Arquivos convertidos
 ├── app.py                # Interface Streamlit
-├── xlsx_to_csv.py        # Script principal
+├── xlsx_to_csv.py        # Lógica de conversão
 ├── requirements.txt
 ├── Dockerfile
 └── docker-compose.yml
@@ -164,7 +116,7 @@ Nenhuma informação é enviada para serviços externos.
   <li>Escolha de pasta via interface</li>
   <li>Melhor tratamento de erros</li>
   <li>Persistência de histórico</li>
-  <li>Deploy em ambiente controlado</li>
+  <li>Versão executável (.exe)</li>
 </ul>
 
 ---
